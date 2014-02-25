@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>PeerJS && Gist test</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <script src=js/base64.js></script>
+    <script src=js/underscore-min.js></script>
+    <script src=js/github.js></script>
+    <script src=js/jquery.js></script>
+    <script src=js/jquery-ui.js></script>
+    <script src=js/peer.js></script>
+    <script src=js/common.js></script>
+
+    <script src="cred.js"> </script> 
+    <script src="main.js"> </script> 
+
+</head>
+<style>
+  #main { width: 300px; margin-left: auto; margin-right: auto }
+  #peers { width: 200px; height:300px; left:-300px; margin-left:-300px; background:#eee; color:#333; border: 1px solid #000}
+  #stop { width: 100px; left:-200px; margin-left: -200px; margin-right: auto }
+  #header { height: 80px }
+  #output { width: 400px; height:300px; border: 1px solid #000; background:#eee }
+  #input { width: 310px; border: 1px solid #000 }
+  #main .column { float: left; position: absolute }
+  #send { width: 80px }
+</style>
+<body>
+
+<div id="header">
+</div>
+
+<div id="main">
+  <div id='outputc', class="column">
+    <div class="ui-widget">
+      <label for="input"><button id='send'>Send:</button></label>
+      <input id="input">
+    </div>
+    <div id="output", class="ui-corner-all">
+    </div>
+  </div>
+  <div class="column">
+    <div id="stop">
+      ?button?
+    </div>
+    <div id="peers", class='ui-corner-all'>
+      No peers..
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
